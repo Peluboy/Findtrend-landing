@@ -1,38 +1,117 @@
-.App {
+/* google fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Effra_Trial_Blk.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Effra_Trial_Bd.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Effra_Trial_Md.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Effra_Trial_Rg.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*  css variables */
+:root {
+    --primary-color: hwb(86 21% 0%);
+    --secondary-color: hwb(0 0% 100%);
+    --h2-fontSize: 4.5rem;
+    --h3-fontSize: 4rem;
+    --h4-fontSize: 2.25rem;
+    --h5-fontSize: 1.5rem;
+    --p-fontSize: 1.125rem;
+  }
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Effra_Trial", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: var(--p-fontSize);
+  font-weight: 400;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: var(--h2-fontSize);
+  font-weight: 900;
+  text-align: center;
+  line-height: 5.5rem;
+  letter-spacing: -0.05em;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: var(--h3-fontSize);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4 {
+  font-size: var(--h4-fontSize);
+}
+
+h5 {
+  font-size: var(--h5-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+section{
+  padding: 60px 0px;
+}
+
+button {
+  height: 3rem;
+  border-radius: 40px;
+  width: 8rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  outline: none;
+  border: none;
 }
