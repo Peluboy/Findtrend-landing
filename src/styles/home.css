@@ -182,13 +182,17 @@
         margin: auto;
     }
 
+    .hero_button{
+        padding: 50px 0px 50px 0px;
+    }
+
     .hero_button img{
         display: none;
     }
 
     .hero_img{
         margin-left: 0px;
-        padding-top: 35px;
+        padding-top: 25px;
     }
     
     .hero_images{
