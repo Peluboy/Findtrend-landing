@@ -177,7 +177,7 @@
     .hero_content p{
         line-height: 1.5rem;
         font-size: .9rem;
-        color: hwb(0 55% 45%);
+        color: rgb(140, 140, 140);
         width: 90%;
         margin: auto;
     }
@@ -188,7 +188,7 @@
 
     .hero_img{
         margin-left: 0px;
-        padding-top: 60px;
+        padding-top: 35px;
     }
     
     .hero_images{
