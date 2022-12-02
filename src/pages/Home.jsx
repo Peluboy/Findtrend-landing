@@ -15,6 +15,8 @@ import Solutions from '../../src/assets/images/arrow-2.svg'
 import Need from '../../src/assets/images/arrow-3.svg'
 import Elon from '../../src/assets/images/elon.svg'
 import Startup from '../components/Startup'
+import Connect from '../components/Connect'
+import BestDeals from '../components/BestDeals'
 
 
 
@@ -91,6 +93,10 @@ const Home = () => {
       </section>
 
       <Startup/>
+
+      <Connect />
+
+      <BestDeals/>
 
     </Helmet>
   )

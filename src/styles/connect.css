@@ -1,0 +1,58 @@
+.connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 0px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.connect_button{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 0px 0px;
+    align-items: center;
+}
+
+.connect_button button{
+    background-color: black;
+    color: white;
+    height: 3.7rem;
+    width: 12rem;
+}
+
+.connect_button button:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 80px 0px;
+    justify-content: center;
+}
+
+.buttons button{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.buttons button.buttonActive{
+    background-color: var(--primary-color);
+}
+
+.buttons button img{
+    width: 50px;
+}
+
+.tweets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}

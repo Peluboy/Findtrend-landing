@@ -21,70 +21,49 @@ import Algolia from '../assets/images/algolia.svg'
 import Heineken from '../assets/images/heineken.svg'
 
 const Startup = () => {
+
+    const startup_logos= [
+        {imgUrl: Microsoft},
+        {imgUrl: Allianz},
+        {imgUrl: Upwork},
+        {imgUrl: Volvo},
+        {imgUrl: Grab},
+        {imgUrl: Verizon},
+        {imgUrl: Coinbase},
+        {imgUrl: Expedia},
+        {imgUrl: Airtable},
+        {imgUrl: Magento},
+        {imgUrl: Carrera},
+        {imgUrl: Bonanza},
+        {imgUrl: Wetransfer},
+        {imgUrl: Suzuki},
+        {imgUrl: Algolia},
+        {imgUrl: Heineken},
+    ]
   return (
     <section className="startup_section">
         <Container>
-          <Row>
-            <Col lg='12'>
-              <div className="startup_title">
-                <h3>
-                    Findtrend make +1000 Startup grow
-                </h3>
-              </div>
-              <div className="logos">
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Microsoft} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Allianz} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Upwork} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Volvo} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Grab} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Verizon} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Coinbase} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Expedia} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Airtable} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Magento} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Carrera} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Bonanza} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Wetransfer} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Suzuki} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Algolia} alt='' />
-                </motion.div>
-                <motion.div  whileHover={{scale: 1.02}} className="logo_container">
-                    <img src={Heineken} alt='' />
-                </motion.div>
-              </div>
-            </Col>
-          </Row>
+            <Row>
+                <Col lg='12'>
+                    <div className="startup_title">
+                        <h3>Findtrend make +1000 Startup grow</h3>
+                    </div>
+                    <div className="logos">
+                    {
+                        startup_logos.map((item, i) => (
+                            <motion.button 
+                                whileHover={{scale:1.05}}
+                                className="logo_container"
+                            >
+                            <img src={item.imgUrl} alt=''/>
+                            </motion.button>
+                        ))
+                    }
+                    </div>
+                </Col>
+            </Row>
         </Container>
-      </section>
+    </section>
   )
 }
 
