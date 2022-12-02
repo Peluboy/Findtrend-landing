@@ -108,3 +108,13 @@
     height: 30px;
     background-color: black;
   }
+
+  @media (max-width:500px){
+    .monthly-yearly img{
+        display: none;
+    }
+
+    .best_deals h3{
+        font-size: 2.4rem;
+    }
+  }
