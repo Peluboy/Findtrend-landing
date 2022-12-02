@@ -10,10 +10,20 @@
     justify-content: center;
 }
 
+.best_deals h3{
+    color: white;
+    padding: 40px 0px 50px 0px;
+}
+
 .monthly-yearly{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.monthly-yearly img{
+    position: absolute;
 }
 
 .monthly-yearly h5:nth-child(1){

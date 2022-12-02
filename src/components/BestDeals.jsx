@@ -25,14 +25,14 @@ const BestDeals = () => {
                                 </label>
                             </div>
                             <h5>Yearly</h5>
-                            <img src={Deals} alt='' />
+                            <img src={Deals} alt='' style={{ right: -110, top:-15 }}/>
                         </div>
                         <div className="subscriptions">
-                            <div className="personal">
+                            {/* <div className="personal">
                                 <h4>Personal</h4>
                                 <p>Special first package for all</p>
                                 <span className="divider"></span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </Col>
