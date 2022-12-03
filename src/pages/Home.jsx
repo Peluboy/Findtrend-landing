@@ -98,6 +98,21 @@ const Home = () => {
 
       <BestDeals/>
 
+      <section className="join_email">
+        <Container>
+          <Row>
+            <Col lg='12' md='6'>
+              <h3 className='join'>
+                Join us on email for<span> more trending topics</span> 
+              </h3>
+              <Link to='/register'>
+                  <motion.button whileTap={{scale: 1.1}} className="join_now">Join Now</motion.button>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
     </Helmet>
   )
 }

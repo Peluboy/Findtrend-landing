@@ -1,5 +1,5 @@
 .deals{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
 }
 
@@ -94,20 +94,93 @@
   .subscriptions{
     display: flex;
     padding: 50px 0px;
+    gap: 35px;
   }
 
-  .personal{
-    height: 490px;
-    width: 360px;
+  .personal,
+  .premium {
+    height: 500px;
+    width: 350px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
   }
 
-  .personal span .divider{
-    width: 500px;
-    height: 30px;
-    background-color: black;
+  .regular {
+    height: 500px;
+    width: 350px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
   }
+
+  .personal h4,
+  .regular h4,
+  .premium h4{
+    font-weight: 700;
+    padding: 0 0 5px 0;
+  }
+
+  .personal p,
+  .regular p,
+  .premium p{
+    font-size: 1rem;
+    padding: 0 0 5px 0;
+  }
+
+  .personal hr,
+  .regular hr,
+  .premium hr{
+    border: 0;
+    border-top: 2px solid #000;
+    width: 280px;
+}
+
+.personal button,
+.premium button{
+    height: 3rem;
+    border-radius: 40px;
+    width: 18rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 15px;
+    font-weight: 600;
+}
+
+.regular button{
+    height: 3rem;
+    border-radius: 40px;
+    width: 18rem;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    font-weight: 600;
+}
+
+
+.amt_monthly{
+    display: flex;
+    align-items: baseline;
+}
+
+.amt_monthly h4{
+    font-weight: 700;
+    font-size: 4rem;
+    padding-right: 10px;
+}
+
+.bullet_points ul{
+    list-style-image: url(../assets/images/bullet.svg);
+}
+
+.bullet_points ul li{
+    font-size: .9rem;
+    line-height: 2rem;
+    padding-left: 10px;
+}
 
   @media (max-width:500px){
     .monthly-yearly img{
@@ -117,4 +190,9 @@
     .best_deals h3{
         font-size: 2.4rem;
     }
+
+    .subscriptions{
+        display: flex;
+        flex-direction: column;
+      }
   }

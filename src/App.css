@@ -61,7 +61,7 @@ p {
 p {
   font-size: var(--p-fontSize);
   font-weight: 400;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h2 {

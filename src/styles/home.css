@@ -123,6 +123,7 @@
 .newtab p{
     width: 50%;
     margin: auto;
+    text-align: center;
 }
 .findTrend_section{
     height: 100%;
@@ -156,7 +157,29 @@
     50% { border-color: var(--primary-color); }
   }
 
+.join_email{
+    background-color: var(--primary-color);
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+}
 
+.join_email button{
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+.join{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.join span{
+    color: #87D322;
+}
 
 
 @media (max-width:500px){ 
@@ -281,5 +304,14 @@
     .findTrend_section h3{
         font-size: 2.5rem;
         font-weight: 800;
+    }
+
+    .join_email{
+        padding: 70px 0px;
+    }
+
+    .join{
+        width: 100%;
+        font-size: 2.3rem;
     }
 }
