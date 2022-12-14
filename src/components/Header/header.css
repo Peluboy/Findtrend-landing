@@ -71,6 +71,10 @@ a > button {
     box-shadow: 3px 3px 8px -3px rgb(23, 23, 23);
 }
 
+.nav_items:active{
+    color: var(--primary-color);
+}
+
 
 @media (max-width:500px){ 
 
