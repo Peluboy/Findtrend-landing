@@ -33,6 +33,8 @@ const nav_links = [
 
 const Header = () => {
 
+  
+
   const headerRef = useRef(null)
 
   const menuRef = useRef(null)
@@ -54,7 +56,7 @@ const Header = () => {
   })
 
   const menuToggle = () => menuRef.current.classList.toggle('active_menu')
-
+  
   return (
     <header className="header" ref={headerRef}>
       <Container>

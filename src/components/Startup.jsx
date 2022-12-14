@@ -40,6 +40,7 @@ const Startup = () => {
         {imgUrl: Algolia},
         {imgUrl: Heineken},
     ]
+    
   return (
     <section className="startup_section">
         <Container>
