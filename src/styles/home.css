@@ -1,317 +1,319 @@
-
-.hero_section{
-    background: url(../../src/assets/images/Bg-hero.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+.hero_section {
+  background: url(../../src/assets/images/Bg-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-.hero_content{
-    padding-top: 30px;
+.hero_content {
+  padding-top: 30px;
 }
 
-.hero_content h2{
-    color: white;
-    padding-bottom: 20px;
+.hero_content h2 {
+  color: white;
+  padding-bottom: 20px;
 }
 
-.hero_content p{
-    line-height: 1.7rem;
-    color: #8B8B8B;
-    width: 45%;
-    text-align: center;
-    margin: auto;
+.hero_content p {
+  line-height: 1.7rem;
+  color: #8b8b8b;
+  width: 45%;
+  text-align: center;
+  margin: auto;
 }
 
-.hero_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px 70px 0px;
-    position: relative;
+.hero_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 70px 0px;
+  position: relative;
 }
 
-.hero_button img{
-    position: absolute;
-    right: 440px;
-    top: 40px;
+.hero_button img {
+  position: absolute;
+  right: 350px;
+  top: 25px;
 }
 
-.hero_button a button{
-    background: var(--primary-color);
-    height: 3.5rem;
-    width: 11rem;
-    font-weight: 600;
+.hero_button a button {
+  background: var(--primary-color);
+  height: 3.5rem;
+  width: 11rem;
+  font-weight: 600;
 }
-.hero_button a button:hover{
-    border: 1.8px solid var(--primary-color);
-    background-color: black;
-    height: 3.5rem;
-    width: 11rem;
-    color: white;
-    font-weight: 600;
-}
-
-.hero_img{
-    margin-left: 195px;
-    padding-top: 60px;
+.hero_button a button:hover {
+  border: 1.8px solid var(--primary-color);
+  background-color: black;
+  height: 3.5rem;
+  width: 11rem;
+  color: white;
+  font-weight: 600;
 }
 
-.hero_images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.hero_img {
+  padding-top: 10px;
 }
 
-.hero_images > img{
-    width: 300px;
-    position: absolute;
+.hero_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 65px;
 }
 
-.hero_images > img:nth-child(1) { 
-    top: -40px;
-    left: 0;
-    z-index: 3;
+.hero_images > img {
+  width: 280px;
+  position: absolute;
 }
 
-.hero_images > img:nth-child(2) { 
-    top: 0px;
-    left: 230px;
-    z-index: 2;
-}
-.hero_images > img:nth-child(3) { 
-    top: -45px;
-    left: 460px;
-    z-index: 1;
-}
-.hero_images > img:nth-child(4) { 
-    top: 0px;
-    left: 700px;
+.hero_images > img:nth-child(1) {
+  top: -40px;
+  left: 0;
+  z-index: 3;
 }
 
+.hero_images > img:nth-child(2) {
+  top: 0px;
+  left: 230px;
+  z-index: 2;
+}
+.hero_images > img:nth-child(3) {
+  top: -45px;
+  left: 460px;
+  z-index: 1;
+}
+.hero_images > img:nth-child(4) {
+  top: 0px;
+  left: 700px;
+}
 
-.newTab_section{
-    height: 100%;
-    background: var(--primary-color);
-    padding: 100px 0px;
+.newTab_section {
+  height: 100%;
+  background: var(--primary-color);
+  padding: 100px 0px;
 }
 
 .elon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 3rem;
-    padding: 80px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  padding: 80px 0px;
 }
 
-.elon > img{
-    width: 150px;
+.elon > img {
+  width: 150px;
 }
 
-.elon > span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 470px;
-    height: 190px;
-    background: #F5F5F5;
-    border-radius: 16px;
+.elon > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 190px;
+  background: #f5f5f5;
+  border-radius: 16px;
 }
 
-.newtab p{
-    width: 50%;
-    margin: auto;
-    text-align: center;
+.newtab p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
-.findTrend_section{
-    height: 100%;
-    padding: 150px 0px;
+.findTrend_section {
+  height: 100%;
+  padding: 110px 0px;
 }
 
-.findTrend > span{
-    color: #ADADAD;
+.findTrend > span {
+  color: #adadad;
 }
 
 .typing {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--primary-color); /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--primary-color); }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
+}
+
+.join_email {
+  background-color: var(--primary-color);
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.join_email button {
+  background-color: black;
+  color: white;
+  margin: auto;
+}
+
+.join {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.join span {
+  color: #87d322;
+}
+
+@media (max-width: 500px) {
+  .hero_section {
+    width: 100vw;
   }
 
-.join_email{
-    background-color: var(--primary-color);
-    padding: 100px 0px;
+  .hero_content {
+    padding-top: 60px;
+  }
+
+  .hero_content h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  .hero_content p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: rgb(140, 140, 140);
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero_button {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .hero_button img {
+    display: none;
+  }
+
+  .hero_img {
+    margin-left: 0px;
+    padding-top: 25px;
+  }
+
+  .hero_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero_images > img {
+    width: 320px;
+    position: relative;
+  }
+
+  .hero_images > img:nth-child(1) {
+    top: -40px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  .hero_images > img:nth-child(2) {
+    top: -60px;
+    left: 0px;
+    z-index: 2;
+  }
+  .hero_images > img:nth-child(3) {
+    top: -85px;
+    left: 0px;
+    z-index: 1;
+  }
+  .hero_images > img:nth-child(4) {
+    top: -105px;
+    left: 0px;
+  }
+
+  .newtab h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+  .elon {
     display: flex;
     flex-direction: column;
-}
+    position: relative;
+  }
 
-.join_email button{
-    background-color: black;
-    color: white;
-    margin: auto;
-}
+  .elon img {
+    width: 120px;
+    position: absolute;
+  }
 
-.join{
-    width: 50%;
+  .elon img:nth-child(3) {
+    bottom: 15px;
+    left: 0;
+  }
+
+  .elon img:nth-child(1) {
+    top: 0;
+    right: 0;
+  }
+
+  .elon > span {
+    width: 300px;
+    height: 120px;
+    border-radius: 13px;
+    /* position: relative; */
+  }
+
+  .elon span img {
+    width: 250px;
+    position: relative;
+  }
+
+  .newtab p {
+    font-size: 1rem;
+    width: 90%;
     text-align: center;
     margin: auto;
-    padding-bottom: 50px;
-}
+    padding-top: 30px;
+  }
 
-.join span{
-    color: #87D322;
-}
+  .newTab_section {
+    padding: 50px 0px;
+  }
 
+  .findTrend_section h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
 
-@media (max-width:500px){ 
+  .join_email {
+    padding: 70px 0px;
+  }
 
-    .hero_section{
-        width: 100vw;
-    }
-
-    .hero_content{
-        padding-top: 60px;
-    }
-    
-    .hero_content h2{
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-    }
-    
-    .hero_content p{
-        line-height: 1.5rem;
-        font-size: .9rem;
-        color: rgb(140, 140, 140);
-        width: 90%;
-        margin: auto;
-    }
-
-    .hero_button{
-        padding: 50px 0px 50px 0px;
-    }
-
-    .hero_button img{
-        display: none;
-    }
-
-    .hero_img{
-        margin-left: 0px;
-        padding-top: 25px;
-    }
-    
-    .hero_images{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero_images > img{
-        width: 320px;
-        position: relative;
-    }
-
-    .hero_images > img:nth-child(1) { 
-        top: -40px;
-        left: 0px;
-        z-index: 3;
-    }
-    
-    .hero_images > img:nth-child(2) { 
-        top: -60px;
-        left: 0px;
-        z-index: 2;
-    }
-    .hero_images > img:nth-child(3) { 
-        top: -85px;
-        left: 0px;
-        z-index: 1;
-    }
-    .hero_images > img:nth-child(4) { 
-        top: -105px;
-        left: 0px;
-    }
-    
-
-    .newtab h2{
-        font-size: 2rem;
-        padding-bottom: 30px;
-    }
-    .elon{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-
-    .elon img{
-        width: 120px;
-        position: absolute;
-    }
-
-    .elon img:nth-child(3){
-        bottom: 15px;
-        left: 0;
-    }
-
-    .elon img:nth-child(1){
-       top: 0;
-       right: 0;
-    }
-    
-    .elon > span{
-        width: 300px;
-        height: 120px;
-        border-radius: 13px;
-        /* position: relative; */
-    }
-
-    .elon span img{
-        width: 250px;
-        position: relative;
-    }
-
-    .newtab p{
-        font-size: 1rem;
-        width: 90%;
-        text-align: center;
-        margin: auto;
-        padding-top: 30px;
-    }
-
-    .newTab_section{
-        padding: 50px 0px;
-    }
-
-    .findTrend_section h3{
-        font-size: 2.5rem;
-        font-weight: 800;
-    }
-
-    .join_email{
-        padding: 70px 0px;
-    }
-
-    .join{
-        width: 100%;
-        font-size: 2.3rem;
-    }
+  .join {
+    width: 100%;
+    font-size: 2.3rem;
+  }
 }

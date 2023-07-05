@@ -1,198 +1,199 @@
-.deals{
-    /* height: 100vh; */
-    background-color: black;
+.deals {
+  /* height: 100vh; */
+  background-color: black;
 }
 
-.best_deals{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.best_deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.best_deals h3{
-    color: white;
-    padding: 40px 0px 50px 0px;
+.best_deals h3 {
+  color: white;
+  padding: 40px 0px 50px 0px;
 }
 
-.monthly-yearly{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.monthly-yearly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.monthly-yearly img{
-    position: absolute;
+.monthly-yearly img {
+  position: absolute;
 }
 
-.monthly-yearly h5:nth-child(1){
-    color: white;
+.monthly-yearly h5:nth-child(1) {
+  color: white;
 }
 
-.monthly-yearly h5:nth-child(3){
-    color: rgb(92, 92, 92);
+.monthly-yearly h5:nth-child(3) {
+  color: rgb(92, 92, 92);
 }
 
 .theme-toggle {
-    padding: 20px;
-  }
-  
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 25px;
-    width: 25px;
-    left: 4px;
-    bottom: 2.5px;
-    background-color: var(--primary-color);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #333;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+  padding: 20px;
+}
 
-  .subscriptions{
-    display: flex;
-    padding: 50px 0px;
-    gap: 35px;
-  }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
 
-  .personal,
-  .premium {
-    height: 500px;
-    width: 350px;
-    background-color: white;
-    border-radius: 15px;
-    padding: 30px;
-    position: relative;
-  }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  .regular {
-    height: 500px;
-    width: 350px;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    padding: 30px;
-    position: relative;
-  }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 
-  .personal h4,
-  .regular h4,
-  .premium h4{
-    font-weight: 700;
-    padding: 0 0 5px 0;
-  }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: var(--primary-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 
-  .personal p,
-  .regular p,
-  .premium p{
-    font-size: 1rem;
-    padding: 0 0 5px 0;
-  }
+input:checked + .slider {
+  background-color: #333;
+}
 
-  .personal hr,
-  .regular hr,
-  .premium hr{
-    border: 0;
-    border-top: 2px solid #000;
-    width: 280px;
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.subscriptions {
+  display: flex;
+  padding: 50px 0px;
+  gap: 35px;
+}
+
+.personal,
+.premium {
+  height: 500px;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regular {
+  height: 500px;
+  width: 350px;
+  display: flex;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal h4,
+.regular h4,
+.premium h4 {
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+.personal p,
+.regular p,
+.premium p {
+  font-size: 1rem;
+  padding: 0 0 5px 0;
+}
+
+.personal hr,
+.regular hr,
+.premium hr {
+  border: 0;
+  border-top: 2px solid #000;
+  width: 280px;
 }
 
 .personal button,
-.premium button{
-    height: 3rem;
-    border-radius: 40px;
-    width: 18rem;
-    background-color: var(--primary-color);
-    position: absolute;
-    bottom: 15px;
-    font-weight: 600;
+.premium button {
+  height: 3rem;
+  border-radius: 40px;
+  width: 18rem;
+  background-color: var(--primary-color);
+  font-weight: 600;
 }
 
-.regular button{
-    height: 3rem;
-    border-radius: 40px;
-    width: 18rem;
-    background-color: black;
-    color: white;
-    position: absolute;
-    bottom: 15px;
-    font-weight: 600;
+.regular button {
+  height: 3rem;
+  border-radius: 40px;
+  width: 18rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
 }
 
-
-.amt_monthly{
-    display: flex;
-    align-items: baseline;
+.amt_monthly {
+  display: flex;
+  align-items: baseline;
 }
 
-.amt_monthly h4{
-    font-weight: 700;
-    font-size: 4rem;
-    padding-right: 10px;
+.amt_monthly h4 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding-right: 10px;
 }
 
-.bullet_points ul{
-    list-style-image: url(../assets/images/bullet.svg);
+.bullet_points ul {
+  list-style-image: url(../assets/images/bullet.svg);
 }
 
-.bullet_points ul li{
-    font-size: .9rem;
-    line-height: 2rem;
-    padding-left: 10px;
+.bullet_points ul li {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  padding-left: 10px;
 }
 
-  @media (max-width:500px){
-    .monthly-yearly img{
-        display: none;
-    }
-
-    .best_deals h3{
-        font-size: 2.4rem;
-    }
-
-    .subscriptions{
-        display: flex;
-        flex-direction: column;
-      }
+@media (max-width: 500px) {
+  .monthly-yearly img {
+    display: none;
   }
+
+  .best_deals h3 {
+    font-size: 2.4rem;
+  }
+
+  .subscriptions {
+    display: flex;
+    flex-direction: column;
+  }
+}
